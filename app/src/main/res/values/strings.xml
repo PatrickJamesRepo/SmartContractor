@@ -1,0 +1,18 @@
+<!-- res/values/strings.xml -->
+<resources>
+    <string name="app_name">Smarter Contractor</string>
+    <string-array name="category_array">
+        <item>Concrete</item>
+        <item>Framing</item>
+        <item>Sheathing</item>
+        <item>Siding</item>
+        <item>Roofing</item>
+        <item>Windows/Doors</item>
+        <item>Insulation</item>
+        <item>Drywall</item>
+        <item>Paint</item>
+        <item>Flooring</item>
+        <item>Electrical</item>
+        <item>Plumbing</item>
+    </string-array>
+</resources>

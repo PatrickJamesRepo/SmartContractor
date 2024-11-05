@@ -1,0 +1,294 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Dark Mode Switch -->
+        <Switch
+            android:id="@+id/themeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toggle Dark Mode" />
+
+        <!-- Row 1: Concrete and Framing -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/concreteButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Concrete"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+
+            <Button
+                android:id="@+id/framingButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Framing"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+        </LinearLayout>
+
+        <!-- Row 2: Sheathing and Siding -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/sheathingButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sheathing"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+
+            <Button
+                android:id="@+id/sidingButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Siding"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+        </LinearLayout>
+
+        <!-- Row 3: Roofing and Windows/Doors -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/roofingButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Roofing"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+
+            <Button
+                android:id="@+id/windowsDoorsButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Windows/Doors"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+        </LinearLayout>
+
+        <!-- Row 4: Insulation and Drywall -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/insulationButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Insulation"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+
+            <Button
+                android:id="@+id/drywallButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Drywall"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+        </LinearLayout>
+
+        <!-- Row 5: Paint and Flooring -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/paintButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Paint"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+
+            <Button
+                android:id="@+id/flooringButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Flooring"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+        </LinearLayout>
+
+        <!-- Row 6: Electrical and Plumbing -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/electricalButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Electrical"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+
+            <Button
+                android:id="@+id/plumbingButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Plumbing"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+        </LinearLayout>
+
+        <!-- Additional Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/torpedoLevelButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Torpedo Level"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+
+            <Button
+                android:id="@+id/constructionCalculatorButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Constructor Calculator"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+        </LinearLayout>
+
+        <!-- Camera and Pitch Finder with icons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/cameraButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Capture Photos"
+                android:drawableStart="@drawable/camera"
+                android:drawablePadding="8dp"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+
+            <Button
+                android:id="@+id/pitchFinderButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pitch Finder"
+                android:drawableStart="@drawable/angle"
+                android:drawablePadding="8dp"
+                android:padding="6dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button"/>
+        </LinearLayout>
+
+        <!-- Generate PDF Button with icon (full width) -->
+        <Button
+            android:id="@+id/generatePdfButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate PDF"
+            android:drawableStart="@drawable/pdf"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:background="@drawable/rounded_button"/>
+
+        <Button
+            android:id="@+id/constructionBot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat with AI"
+            android:drawableStart="@drawable/pdf"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:background="@drawable/rounded_button"/>
+
+        <Button
+            android:id="@+id/arMeasurementButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Measurements from Image"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="@drawable/rounded_button"/>
+
+        <!-- ImageView for displaying selected image -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>
